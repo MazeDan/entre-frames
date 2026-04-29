@@ -15,7 +15,7 @@ class MovieController extends Controller
      */
     public function index()
     {
-       $movies = Movie::with('review')->latest()->get();
+       $movies = Movie::has('review')->with('review')->latest()->get();
 
         return view('movies.index', compact('movies'));
     }
