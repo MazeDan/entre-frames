@@ -3,16 +3,21 @@
 namespace App\Http\Controllers;
 
 use App\Models\Movie;
+use App\Models\Review;
+
 use Illuminate\Http\Request;
 
 class MovieController extends Controller
+
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+       $movies = Movie::with('review')->latest()->get();
+
+        return view('movies.index', compact('movies'));
     }
 
     /**
@@ -36,7 +41,7 @@ class MovieController extends Controller
      */
     public function show(Movie $movie)
     {
-        //
+        return view('movies.show', compact('movie', 'reviews'));
     }
 
     /**

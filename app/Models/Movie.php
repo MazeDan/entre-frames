@@ -15,4 +15,9 @@ class Movie extends Model
         'poster_path',
         'backdrop_path'
     ];
+
+    public function review()
+{
+    return $this->hasOne(Review::class);
+}
 }
