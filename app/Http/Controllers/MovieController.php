@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Movie;
 use App\Models\Review;
+use App\Models\Watchlist;
 
 use Illuminate\Http\Request;
 
@@ -18,6 +19,13 @@ class MovieController extends Controller
        $movies = Movie::has('review')->with('review')->latest()->get();
 
         return view('movies.index', compact('movies'));
+    }
+
+        public function watchlist()
+    {
+            $watchlists = Watchlist::with('movie')->where('watched', false)->orderBy('priority', 'desc')->get();
+
+        return view('watchlist.index', compact('watchlists'));
     }
 
     /**
