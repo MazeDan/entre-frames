@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.index')
 @section('content')
 
 <div class="content-grid" id="lista">
