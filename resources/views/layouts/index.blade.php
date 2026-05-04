@@ -187,19 +187,20 @@
         
     
 
-         <a href="/" class="grid-item nav-block">
-               <div class="grid-item brand-block">
-            ENTRE<br><span style="color: var(--accent-color)">FRAMES</span>
-            </div>
-        </a>
 
 
-
-        <a href="/portfolio" class="grid-item nav-block">
+        <a href="https://dansb.com.br/" class="grid-item nav-block">
             <h2>Navegação</h2>
             <div>
                 <strong>VOLTAR AO PORTFÓLIO</strong>
                 <p class="m-0 text-muted small">Retornar à página principal</p>
+            </div>
+        </a>
+
+        
+         <a href="/" class="grid-item nav-block">
+               <div class="grid-item brand-block">
+            <span style="color: var(--accent-color)">ENTRE FRAMES</span>
             </div>
         </a>
 
@@ -213,7 +214,9 @@
 
            <div class="grid-item nav-block nav-objective">
             <h2>Objetivo do Projeto</h2>
-            <p>Uma exploração visual sobre a técnica cinematográfica, decompondo filmes em seus elementos fundamentais para entender a narrativa através da luz e composição.</p>
+            <p>Um site onde eu posso registrar os filmes que já assisti, dar minhas opiniões e também listar aqueles que ainda estão na fila (que só cresce, inclusive).
+
+Além de ser um projeto pessoal, também foi uma forma de explorar um estilo de design que sempre curti: o brutalismo. Visual mais cru, direto, sem muito “enfeite”  meio que deixando o conteúdo falar mais alto do que a estética perfeita.</p>
             </div>
     
 

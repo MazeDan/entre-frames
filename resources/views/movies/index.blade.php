@@ -3,7 +3,7 @@
     
 <div class="content-grid" id="lista">
     @foreach($movies as $movie)
-        <a href="" class="movie-card">
+        <a  class="movie-card">
             <div class="movie-frame">
                 <img src="https://image.tmdb.org/t/p/w780{{ $movie->backdrop_path ?? $movie->poster_path }}" 
                      alt="{{ $movie->title }}" 
